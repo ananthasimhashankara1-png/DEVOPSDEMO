@@ -35,3 +35,16 @@ else:
 #  length of the tuple
 my_tuple6 = ("man1","Ananthsimha", "man1",25,"man1",True, 5,9,9)
 print(len(my_tuple6))
+
+
+
+
+# copying the tuple
+my_tuple7 = ("man1","Ananthsimha", "man1",25,"man1",True, 5,9,9)
+my_tuple8=my_tuple7 
+print(my_tuple8)
+
+
+# joining the tuple
+my_tuple9 =my_tuple2+my_tuple4
+print(my_tuple9)
