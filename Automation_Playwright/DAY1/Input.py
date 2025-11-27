@@ -1,3 +1,5 @@
+#  addin the new s=file 
+
 num1=input("Enter first number: ")
 num2=input("Enter second number: ")
 print("The sum is: ", float(num1)+float(num2))
