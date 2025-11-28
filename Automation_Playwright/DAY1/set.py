@@ -19,7 +19,7 @@ print(my_set3)
 my_set.add("banana")
 print(my_set)
 
-my_set3.update(["banana","cherry","orange","grape"])
+my_set3.update(["banana","cherry","orange","grape",89,90])
 print(my_set3)
 
 # access the data from the set using for loop
@@ -42,5 +42,9 @@ print(my_set3)
 print(len(my_set3))
 print(my_set3)
 
-del my_set3
+my_set3.union(my_set2)
 print(my_set3)
+
+
+# del my_set3
+# print(my_set3)
