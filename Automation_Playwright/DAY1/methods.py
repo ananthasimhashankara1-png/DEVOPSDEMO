@@ -135,7 +135,7 @@ person_info(age=28 , name="man123",city="chennai")   # keyword arguments
 
 
 #  function with return multiple values
-
+# it will return as tuple
 def arithmetic_operations(num1, num2):
     sum = num1 + num2
     difference = num1 - num2
