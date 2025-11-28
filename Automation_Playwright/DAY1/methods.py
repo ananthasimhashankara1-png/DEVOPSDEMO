@@ -77,16 +77,22 @@ def my_func5():
 print(my_func5())
 #  function arguments
 # types of function arguments
-# 1. positional arguments
-
-
-# 2. keyword arguments  
 
 
 
 
 
 # 3. default arguments
+
+#  what is default arguments with example
+# default arguments are the arguments which are assigned a default value during the function definition
+# if the value is not passed during the function call then the default value is used
+def greet(name, msg="Good morning!"):
+    print("Hello", name + ', ' + msg)   
+
+greet("lakshmi") 
+  # using default message
+greet("akshmi","How do you do?")
 
 
 
@@ -125,3 +131,28 @@ def person_info(name, age, city):
 person_info("ananthsimha", 25, "bangalore")   # positional arguments
 
 person_info(age=28 , name="man123",city="chennai")   # keyword arguments
+
+
+
+#  function with return multiple values
+# it will return as tuple
+def arithmetic_operations(num1, num2):
+    sum = num1 + num2
+    difference = num1 - num2
+    product = num1 * num2
+    quotient = num1 / num2
+    return sum, difference, product, quotient
+
+result = arithmetic_operations(20, 10)
+print("the sum is: ", result[0])
+print("the difference is: ", result[1]) 
+
+print("the product is: ", result[2])
+print("the quotient is: ", result[3])
+#  unpacking the multiple return values
+sum, difference, product, quotient = arithmetic_operations(30, 15)
+print("the sum is: ", sum)
+print("the difference is: ", difference)    
+print("the product is: ", product)
+print("the quotient is: ", quotient)
+
