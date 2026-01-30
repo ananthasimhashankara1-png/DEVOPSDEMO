@@ -11,18 +11,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
           - name: buildsteps
-            run: echo "hi build1"
+            run: echo "hi ${{ MYNAME }}"
   tests:
     runs-on: ubuntu-latest
     needs: build
     steps:
         - name: teststeps
-          run: echo " this is test1"
+          run: echo " this is ${{ MYNAME }}"
   deploy:
     runs-on: ubuntu-latest
     needs: tests
     steps:
       - name: depo
-        run: echo " his is depopy1"
+        run: echo " his is ${{ MYNAME }}"
 
   
